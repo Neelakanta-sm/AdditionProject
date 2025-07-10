@@ -5,8 +5,8 @@
 
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>io.github.Neelakanta-sm</groupId>
-    <artifactId>AdditionProject</artifactId>
+    <groupId>io.github.neelakanta-sm</groupId>
+    <artifactId>addtionproject</artifactId>
     <version>1.0.0</version>
     <packaging>jar</packaging>
     <name>Addition</name>
