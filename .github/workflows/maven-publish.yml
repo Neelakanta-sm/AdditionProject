@@ -1,7 +1,7 @@
 name: Deploy Maven Package
 
 on:
-  push:
+  workflow_dispatch:
     branches: [ "master" ]
 
 jobs:
@@ -19,6 +19,6 @@ jobs:
         distribution: 'temurin'
 
     - name: Publish to GitHub Packages
-      run: mvn clean deploy --settings .github/maven-settings.xml
+      run: mvn clean deploy
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
