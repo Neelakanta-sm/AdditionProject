@@ -5,14 +5,14 @@
 
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.NeelakantaReddy</groupId>
-    <artifactId>addition-pack</artifactId>
+    <groupId>com.Neelakanta-sm</groupId>
+    <artifactId>AdditionProject</artifactId>
     <version>1.0.0</version>
     <packaging>jar</packaging>
-    <name>Adder</name>
+    <name>Addition</name>
     <description>Simple Java addition library</description>
 
-    <url>https://github.com/NeelakantaReddy/addition-pack</url>
+    <url>https://github.com/Neelakanta-sm/AdditionProject</url>
 
     <licenses>
         <license>
@@ -23,24 +23,39 @@
 
     <developers>
         <developer>
-            <id>NeelakantaReddy</id>
-            <name>NeelakantaReddy</name>
-            <url>https://github.com/NeelakantaReddy</url>
+            <id>Neelakanta-sm</id>
+            <name>Neelakanta-sm</name>
+            <url>https://github.com/Neelakanta-sm</url>
         </developer>
     </developers>
 
     <scm>
-        <url>https://github.com/NeelakantaReddy/addition-pack</url>
-        <connection>scm:git:https://github.com/NeelakantaReddy/addition-pack.git</connection>
-        <developerConnection>scm:git:https://github.com/NeelakantaReddy/addition-pack.git</developerConnection>
+        <url>https://github.com/Neelakanta-sm/AdditionProject</url>
+        <connection>scm:git:https://github.com/Neelakanta-sm/AdditionProject.git</connection>
+        <developerConnection>scm:git:https://github.com/Neelakanta-sm/AdditionProject.git</developerConnection>
     </scm>
 
     <distributionManagement>
         <repository>
             <id>github</id>
             <name>GitHub Packages</name>
-            <url>https://maven.pkg.github.com/NeelakantaReddy/addition-pack</url>
+            <url>https://maven.pkg.github.com/Neelakanta-sm/AdditionProject</url>
         </repository>
     </distributionManagement>
-
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>3.3.0</version>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <mainClass>com.example.addition.Adder</mainClass>
+                        </manifest>
+                    </archive>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>
